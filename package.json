@@ -1,0 +1,59 @@
+{
+  "name": "@sns-parse/cli",
+  "version": "0.1.0-alpha.1+upstream.1.6.7",
+  "description": "sns-parse 命令行兼容层：像 you-get 一样在终端解析/下载全平台视频与图集（引擎与配置声明均来自 @sns-parse/core 与已安装的 platform-*/ext-* 碎片包）",
+  "main": "lib/index.js",
+  "typings": "lib/index.d.ts",
+  "bin": {
+    "sns-parse": "lib/index.js",
+    "video-parser": "lib/index.js"
+  },
+  "files": [
+    "lib"
+  ],
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc",
+    "clean": "rimraf lib",
+    "test": "tsx test/smoke.ts",
+    "prepublishOnly": "tsc"
+  },
+  "keywords": [
+    "sns-parse",
+    "cli",
+    "video",
+    "parser",
+    "downloader",
+    "douyin",
+    "bilibili",
+    "twitter"
+  ],
+  "dependencies": {
+    "@sns-parse/core": "^0.4.0-alpha.1",
+    "@sns-parse/extensions": "^0.1.0-alpha.1",
+    "@sns-parse/platforms": "^0.2.0-alpha.1",
+    "axios": "^1.16.1"
+  },
+  "optionalDependencies": {
+    "@char46/tlsget-rs": "^1.0.0",
+    "ffmpeg-static": "^5.2.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.0",
+    "rimraf": "^5.0.5",
+    "tsx": "^4.23.12",
+    "typescript": "^5.3.3"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sns-parse/cli.git"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "packageManager": "pnpm@12.3.4"
+}
