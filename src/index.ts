@@ -24,44 +24,24 @@ import {
   shutdownTlsClient,
   collectPlatformDefinitions, loadExtensionContributions,
   mergeConfigContributions, platformConfigContributions, defaultsFromContributions,
+  engineConfigContributions,
   createConfigEnvelope, serializeConfigEnvelope, parseConfigInput, mergeConfig,
   type ParsedData,
 } from '@sns-parse/core'
 
 const PLUGIN_NAME = 'sns-parse'
 
-// 与 core 侧默认一致的基线配置（安装的碎片包声明会在此基础上展开覆盖）
+// CLI 侧专属基线（引擎/扩展/平台配置默认值全部来自 core DSL 声明，见 contributedDefaults）
 const BASE_DEFAULTS: Record<string, any> = {
   debug: false,
-  deduplicationInterval: 180,
-  cacheTTL: 600,
-  enableDeduplication: false,
-  globalFieldMapping: JSON.stringify({
-    title: 'data.title', desc: 'data.description', author: 'data.author.name', uid: 'data.author.id',
-    avatar: 'data.author.avatar', cover: 'data.cover_url', video: 'data.video_url',
-    video_backup: 'data.video_qualities', videos: 'data.videos', type: 'data.type',
-    like: 'data.statistics.likes', comment: 'data.statistics.comments', collect: 'data.statistics.favorites',
-    share: 'data.statistics.shares', play: 'data.statistics.plays', duration: 'data.duration',
-    publishTime: 'data.create_time', music_title: 'data.music.title', music_author: 'data.music.author',
-    music_cover: 'data.music.cover', music_url: 'data.music.url',
-  }),
-  customApis: [],
-  customPlatforms: [],
-  primaryApiUrl: 'https://api.bugpk.com/api/short_videos',
-  backupApiUrl: 'https://api.bugpk.com/api/svparse',
-  retryTimes: 3,
-  retryInterval: 1000,
-  timeout: 60000,
-  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36',
-  customHeaders: [],
-  maxDescLength: 500,
-  unifiedMessageFormat: '标题：${标题}\n作者：${作者}\n简介：${简介}\n翻译：${翻译}\n点赞：${点赞数}\n收藏：${收藏数}\n转发：${转发数}\n播放：${播放数}\n评论：${评论数}',
-  proxy: { enabled: false },
 }
 
-/** 汇总已安装扩展+平台声明的配置默认值（与 koishi 层 collectConfigContributions 同源） */
+/**
+ * 汇总引擎+已安装扩展+平台声明的配置默认值
+ * （与 koishi 层 collectConfigContributions 同源；引擎组来自 core 的 engineConfigContributions）
+ */
 function contributedDefaults(defs: ReturnType<typeof collectPlatformDefinitions>): Record<string, any> {
-  const lists = [loadExtensionContributions()]
+  const lists = [engineConfigContributions(), loadExtensionContributions()]
   if (defs.length) lists.push(platformConfigContributions(defs))
   return defaultsFromContributions(mergeConfigContributions(lists))
 }

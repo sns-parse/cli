@@ -110,11 +110,11 @@ importers:
   .:
     dependencies:
       '@sns-parse/core':
-        specifier: ^0.4.0-alpha.1
-        version: 0.4.0-alpha.1(debug@4.4.3)
+        specifier: ^0.4.0-alpha.3
+        version: 0.4.0-alpha.3(debug@4.4.3)
       '@sns-parse/extensions':
-        specifier: ^0.1.0-alpha.1
-        version: 0.1.0-alpha.1(debug@4.4.3)
+        specifier: ^0.1.0-alpha.2
+        version: 0.1.0-alpha.2(debug@4.4.3)
       '@sns-parse/platforms':
         specifier: ^0.2.0-alpha.1
         version: 0.2.0-alpha.1
@@ -346,36 +346,32 @@ packages:
     resolution: {integrity: sha512-+1VkjdD0QBLPodGrJUeqarH8VAIvQODIbwh9XpP5Syisf7YoQgsJKPNFoqqLQlu+VQ/tVSshMR6loPMn8U+dPg==}
     engines: {node: '>=14'}
 
-  '@sns-parse/core@0.1.0':
-    resolution: {integrity: sha512-eYGhtV99+EWtgjUgGyaLXDnGDJ22gaHkR3EKuZUNDs3lB45qJuKe6C+hLTEY/e/7yD2fkFu+PTcHcmdiR0acBg==}
-    engines: {node: '>=16.0.0'}
-
   '@sns-parse/core@0.3.0-alpha.1':
     resolution: {integrity: sha512-z/ZPrWq+tKdaGLxOSIsiwT5e9HkaauxvvEeDBwGLPlxnQsB5sq1p/hGfq3bRu/3/IK3t8S9UUf6IfYYqzEdRjg==}
     engines: {node: '>=16.0.0'}
 
-  '@sns-parse/core@0.4.0-alpha.1':
-    resolution: {integrity: sha512-XDw8Ft7IazLmnrMMqOuZ4svL9E0In3HQA5f//R+3zBkN3NSDbltEhjf/S3AjRxdTScGGKUi54ys4GtpeO7ZTzw==}
+  '@sns-parse/core@0.4.0-alpha.3':
+    resolution: {integrity: sha512-ho4xvksXGgVJFreYt4qNoTzwFiYmQl0dnCOSm9raB4WR5u1uxXHO0t67XxgspaqO3+Cx6IQKF+QF0QI0XXKiTA==}
     engines: {node: '>=16.0.0'}
 
-  '@sns-parse/ext-gif@0.1.0-alpha.1':
-    resolution: {integrity: sha512-DXPpDvfbPFtI+qrq5+LATWlo1hkWT9ohMfu455/fzsg4Me/fnWFvhrjJ/SWNHgn7Uz3PgENsl0fJsGwlIR3FwA==}
+  '@sns-parse/ext-gif@0.1.0-alpha.2':
+    resolution: {integrity: sha512-IFArauhy2FpnVXfRkvuAVnFxR8ShivYDW/jO1yfq+6LzY0D8bUwzTvB+jn+jstmvt0YZUmMZTMtws6lze4NIsg==}
     engines: {node: '>=16.0.0'}
 
-  '@sns-parse/ext-merge@0.1.0-alpha.1':
-    resolution: {integrity: sha512-yuC4goEa71bHrNN9JtTzel2yuCyDyZm0neSpcYAhJiOjloZPKbAWwOHuWY4RWYb/IMFjAiV89B7lDNhrCljoEA==}
+  '@sns-parse/ext-merge@0.1.0-alpha.2':
+    resolution: {integrity: sha512-3KkEe1C9p+njR9SeDVOCGkiNphX2Xb1cdaj/RVWkr3Jjv+htd6f2z6vHUWMl+LVaBLCI9OiklPFgmuDr2k1RfQ==}
     engines: {node: '>=16.0.0'}
 
-  '@sns-parse/ext-nsfw@0.1.0-alpha.1':
-    resolution: {integrity: sha512-6O69hFNPK8PN2G7tdwN05wDYy1NQHsG7+lzjJYF+ERimSjwupo0GNhEYj0VZSEE4EsB58Cedc1E1UusS9OUHlA==}
+  '@sns-parse/ext-nsfw@0.2.0-alpha.2':
+    resolution: {integrity: sha512-bUKQ0crQe2kmUwOri+jVhyjysL0fqU0BMS+FqNjZRDcldKzV1wju9r5gcZ7zcUHthr4S0kIDJmiJeA78KXpLyg==}
     engines: {node: '>=16.0.0'}
 
-  '@sns-parse/ext-translate@0.1.0-alpha.1':
-    resolution: {integrity: sha512-NBIqIdsaw50J8vvyVrqCT8JPU5ppqqhIy8FxYeCW26AdfJBhEPIijCv8HeNnRpay4sLTsm/kO/RiHEWV7nFn6Q==}
+  '@sns-parse/ext-translate@0.1.0-alpha.2':
+    resolution: {integrity: sha512-h3B4YcRFhwPF8QvqMh3IGdWvhLbTK9csnRl/tn0amQqXUVu4Me+wPHQb0Hba3rSy87FaeSYnNx6D4u24/93uEg==}
     engines: {node: '>=16.0.0'}
 
-  '@sns-parse/extensions@0.1.0-alpha.1':
-    resolution: {integrity: sha512-4rhDNH4Gf9gFS42KUSiJs9rgsWiDSaY343V6MnJMbcl8T7pOZql08G8RjiZ5wbZ8OBcgt+J03nLElc9NeyVWQg==}
+  '@sns-parse/extensions@0.1.0-alpha.2':
+    resolution: {integrity: sha512-Fqsavva0JcpwjpiXJlBzgxx+DSqCCT93v/2nbta8funqmcsjaEhnSGpIrOX0TOE9nMbzt3+x2emC4WI3F84i2A==}
     engines: {node: '>=16.0.0'}
 
   '@sns-parse/platform-acfun@0.2.0-alpha.1':
@@ -499,10 +495,6 @@ packages:
   agent-base@6.0.2:
     resolution: {integrity: sha512-RZNwNclF7+MS/8bDg70amg32dyeZGZxiDuQmZxKLAlQjr3jGyLx+4Kkk58UO7D2QdgFIQCovuSuZESne6RG6XQ==}
     engines: {node: '>= 6.0.0'}
-
-  agent-base@9.0.0:
-    resolution: {integrity: sha512-TQf59BsZnytt8GdJKLPfUZ54g/iaUL2OWDSFCCvMOhsHduDQxO8xC4PNeyIkVcA5KwL2phPSv0douC0fgWzmnA==}
-    engines: {node: '>= 20'}
 
   ansi-regex@5.0.1:
     resolution: {integrity: sha512-quJQXlTSUGL2LH9SUXo8VwsY4soanhgo6LNSm84E1LBcE8s3O0wpdiRzyR9z/ZZJMlMWv37qOOb9pdJlMUEKFQ==}
@@ -677,10 +669,6 @@ packages:
     resolution: {integrity: sha512-dFcAjpTQFgoLMzC2VwU+C/CbS7uRL0lWmxDITmqm7C+7F0Odmj6s9l6alZc6AELXhrnggM2CeWSXHGOdX2YtwA==}
     engines: {node: '>= 6'}
 
-  https-proxy-agent@9.1.0:
-    resolution: {integrity: sha512-ag87y7cJJ9/3+GxFr8Oy4O5faDsGRGnBGsJj/YjOSsSx/5eadKLYTMPlzuR6obgoCDDm0abAAZitXXQkMOPSpA==}
-    engines: {node: '>= 20'}
-
   inherits@2.0.4:
     resolution: {integrity: sha512-k/vGaX4/Yla3WzyMCvTQOXYeIHvqOKtnqBduzTHpzpQZzAskKMhZ2K+EnBiSM9zGSoIFeMpXKxa4dYeZIQqewQ==}
 
@@ -737,15 +725,6 @@ packages:
   progress@2.0.3:
     resolution: {integrity: sha512-7PiHtLll5LdnKIMw100I+8xJXR5gW2QwWYkT6iJva0bXitZKa/XMrSbdmg3r2Xnaidz9Qumd0VPaMrZlF9V9sA==}
     engines: {node: '>=0.4.0'}
-
-  proxy-agent-negotiate@1.1.0:
-    resolution: {integrity: sha512-N8IBcM3UgCVzz2L2Lqv8DVntDnnC8/hiV4nEDUPkqq72TPUgYWjQc+bdZlBPZK9LzPAvOY//gAt0S0DApoOXWQ==}
-    engines: {node: '>= 20'}
-    peerDependencies:
-      kerberos: ^2.0.0
-    peerDependenciesMeta:
-      kerberos:
-        optional: true
 
   proxy-from-env@2.1.0:
     resolution: {integrity: sha512-cJ+oHTW1VAEa8cJslgmUZrc+sjRKgAKl3Zyse6+PV38hZe/V6Z14TbCuXcan9F9ghlz4QrFr2c92TNF82UkYHA==}
@@ -953,61 +932,60 @@ snapshots:
   '@pkgjs/parseargs@0.11.0':
     optional: true
 
-  '@sns-parse/core@0.1.0': {}
-
   '@sns-parse/core@0.3.0-alpha.1': {}
 
-  '@sns-parse/core@0.4.0-alpha.1(debug@4.4.3)':
+  '@sns-parse/core@0.4.0-alpha.3(debug@4.4.3)':
     dependencies:
       axios: 1.20.0(debug@4.4.3)
-      https-proxy-agent: 9.1.0
+      https-proxy-agent: 5.0.1
     optionalDependencies:
       '@char46/tlsget-rs': 1.0.9
       ffmpeg-static: 5.3.0
     transitivePeerDependencies:
       - debug
-      - kerberos
       - supports-color
 
-  '@sns-parse/ext-gif@0.1.0-alpha.1':
+  '@sns-parse/ext-gif@0.1.0-alpha.2(debug@4.4.3)':
     dependencies:
-      '@sns-parse/core': 0.1.0
+      '@sns-parse/core': 0.4.0-alpha.3(debug@4.4.3)
     optionalDependencies:
       ffmpeg-static: 5.3.0
     transitivePeerDependencies:
+      - debug
       - supports-color
 
-  '@sns-parse/ext-merge@0.1.0-alpha.1':
+  '@sns-parse/ext-merge@0.1.0-alpha.2(debug@4.4.3)':
     dependencies:
-      '@sns-parse/core': 0.1.0
-      '@sns-parse/ext-gif': 0.1.0-alpha.1
+      '@sns-parse/core': 0.4.0-alpha.3(debug@4.4.3)
+      '@sns-parse/ext-gif': 0.1.0-alpha.2(debug@4.4.3)
     optionalDependencies:
       ffmpeg-static: 5.3.0
     transitivePeerDependencies:
+      - debug
       - supports-color
 
-  '@sns-parse/ext-nsfw@0.1.0-alpha.1(debug@4.4.3)':
+  '@sns-parse/ext-nsfw@0.2.0-alpha.2(debug@4.4.3)':
     dependencies:
-      '@sns-parse/core': 0.1.0
+      '@sns-parse/core': 0.4.0-alpha.3(debug@4.4.3)
       axios: 1.20.0(debug@4.4.3)
     transitivePeerDependencies:
       - debug
       - supports-color
 
-  '@sns-parse/ext-translate@0.1.0-alpha.1(debug@4.4.3)':
+  '@sns-parse/ext-translate@0.1.0-alpha.2(debug@4.4.3)':
     dependencies:
-      '@sns-parse/core': 0.1.0
+      '@sns-parse/core': 0.4.0-alpha.3(debug@4.4.3)
       axios: 1.20.0(debug@4.4.3)
     transitivePeerDependencies:
       - debug
       - supports-color
 
-  '@sns-parse/extensions@0.1.0-alpha.1(debug@4.4.3)':
+  '@sns-parse/extensions@0.1.0-alpha.2(debug@4.4.3)':
     dependencies:
-      '@sns-parse/ext-gif': 0.1.0-alpha.1
-      '@sns-parse/ext-merge': 0.1.0-alpha.1
-      '@sns-parse/ext-nsfw': 0.1.0-alpha.1(debug@4.4.3)
-      '@sns-parse/ext-translate': 0.1.0-alpha.1(debug@4.4.3)
+      '@sns-parse/ext-gif': 0.1.0-alpha.2(debug@4.4.3)
+      '@sns-parse/ext-merge': 0.1.0-alpha.2(debug@4.4.3)
+      '@sns-parse/ext-nsfw': 0.2.0-alpha.2(debug@4.4.3)
+      '@sns-parse/ext-translate': 0.1.0-alpha.2(debug@4.4.3)
     transitivePeerDependencies:
       - debug
       - supports-color
@@ -1163,8 +1141,6 @@ snapshots:
       debug: 4.4.3
     transitivePeerDependencies:
       - supports-color
-
-  agent-base@9.0.0: {}
 
   ansi-regex@5.0.1: {}
 
@@ -1377,15 +1353,6 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  https-proxy-agent@9.1.0:
-    dependencies:
-      agent-base: 9.0.0
-      debug: 4.4.3
-      proxy-agent-negotiate: 1.1.0
-    transitivePeerDependencies:
-      - kerberos
-      - supports-color
-
   inherits@2.0.4:
     optional: true
 
@@ -1431,8 +1398,6 @@ snapshots:
 
   progress@2.0.3:
     optional: true
-
-  proxy-agent-negotiate@1.1.0: {}
 
   proxy-from-env@2.1.0: {}
 
