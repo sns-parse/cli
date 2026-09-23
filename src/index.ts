@@ -68,6 +68,7 @@ interface CliArgs {
   includeSecrets: boolean
   configFile: string | undefined
   tree: boolean
+  noReplies: boolean
   tab: string | undefined
   kind: string | undefined
   limit: number | undefined
@@ -80,7 +81,7 @@ function parseArgs(argv: string[]): CliArgs {
     api: undefined, apiKey: undefined, proxy: undefined, dedicatedFirst: false,
     mergeImages: false, twitterAuthToken: undefined, twitterCt0: undefined,
     exportConfig: false, includeSecrets: false, configFile: undefined,
-    tree: false, tab: undefined, kind: undefined, limit: undefined, connType: undefined,
+    tree: false, noReplies: false, tab: undefined, kind: undefined, limit: undefined, connType: undefined,
   }
   const positional: string[] = []
   for (let i = 0; i < argv.length; i++) {
@@ -95,6 +96,7 @@ function parseArgs(argv: string[]): CliArgs {
       case '--api-key': args.apiKey = argv[++i]; break
       case '--proxy': args.proxy = argv[++i]; break
       case '--tree': args.tree = true; break
+      case '--no-replies': args.noReplies = true; break
       case '--tab': args.tab = argv[++i]; break
       case '--kind': args.kind = argv[++i]; break
       case '--limit': args.limit = Number(argv[++i]) || undefined; break
@@ -134,11 +136,12 @@ sns-parse CLI — 像 you-get 一样解析/下载视频（兼容别名 video-par
   sns-parse follows <screenName> [选项]    关注/粉丝列表
 
 X 扩展选项（需 --twitter-auth-token + --twitter-ct0，或经 --config 配置）:
-  --tree                 推文树：引用链（quoted，递归）+ 回复链（上溯至根），树形输出
+  --tree                 推文树：引用链（quoted，递归）+ 回复链（上溯至根）+ 会话回复树（回复的回复递归）
+  --no-replies           配合 --tree：跳过会话回复树
   --tab <t>              user 命令的标签页：tweets（默认）| replies | likes（仅当前登录用户）
   --kind <k>             user 命令的内容筛选：text | video | image | retweet | reply
   --conn-type <t>        follows 命令列表类型：followers（默认）| following
-  --limit <n>            条数上限（user 默认 20，follows 默认 50）
+  --limit <n>            条数上限（user 默认 20，follows 默认 50，--tree 回复默认 100）
 
 选项:
   -d, --download         下载视频/图集/封面/音乐到本地（多视频推文全量下载）
@@ -340,14 +343,26 @@ function tweetNodeLines(node: TweetTree, prefix: string): string[] {
     lines.push(`${prefix}  ├─ 引用 ↴`)
     lines.push(...tweetNodeLines(node.quoted, `${prefix}  │ `))
   }
+  if (node.replies?.length) {
+    node.replies.forEach((r, i) => {
+      const last = i === node.replies!.length - 1
+      lines.push(`${prefix}  ${last ? '└' : '├'}─ 回复 ↳`)
+      lines.push(...tweetNodeLines(r, `${prefix}  ${last ? ' ' : '│'} `))
+    })
+  }
   return lines
+}
+
+function countReplies(node: TweetTree): number {
+  return (node.replies || []).reduce((acc, r) => acc + 1 + countReplies(r), 0)
 }
 
 function printTweetTree(tree: TweetTree): void {
   const chain: TweetTree[] = []
   for (let n: TweetTree | undefined = tree; n; n = n.replyTo) chain.unshift(n)
   const quotedDepth = (n: TweetTree): number => (n.quoted ? 1 + quotedDepth(n.quoted) : 0)
-  console.log(`▶ 推文树（回复链 ${chain.length} 层，最深层含引用链 ${quotedDepth(tree)} 级）\n`)
+  const replies = countReplies(tree)
+  console.log(`▶ 推文树（回复链 ${chain.length} 层，最深层含引用链 ${quotedDepth(tree)} 级${replies ? `，会话回复 ${replies} 条` : ''}）\n`)
   chain.forEach((n, i) => {
     const focused = i === chain.length - 1
     console.log(`${focused ? '▶ 当前' : `↰ 上文 ${i + 1}/${chain.length - 1}`}`)
@@ -376,8 +391,12 @@ async function runTree(args: CliArgs, cfg: Record<string, any>): Promise<void> {
   const ct0 = args.twitterCt0 || cfg.twitterCt0
   const creds = authToken && ct0 ? { authToken: String(authToken), ct0: String(ct0) } : undefined
   if (creds) process.stdout.write('▶ 使用登录态（GraphQL；无登录态则走公开 syndication）\n')
+  if (!creds && !args.noReplies) process.stdout.write('▶ 未配置登录态：会话回复树需登录态，已跳过（仅引用链+上溯链）\n')
   try {
-    const tree = await fetchTweetTree(args.url, axios.create({ timeout: 30000 }), creds as any, undefined)
+    const tree = await fetchTweetTree(args.url, axios.create({ timeout: 30000 }), creds as any, undefined, {
+      withReplies: !args.noReplies,
+      repliesLimit: args.limit ?? 100,
+    })
     printTweetTree(tree)
     process.exit(0)
   } catch (e: any) {
