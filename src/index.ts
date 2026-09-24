@@ -14,23 +14,25 @@ import { join, resolve, extname } from 'path'
 import {
   linkTypeParser,
   createRuntime,
-  createCoreExtensions,
+  loadExtensionImplementations,
   getPlatformConfig,
   parseUrl,
   generateFormattedText, formatDuration, formatPublishTime,
   setLogger, consoleLogger, setVerboseLogging, debugLog,
   langName,
-  mergeImages, type MergeLayout,
   shutdownTlsClient,
   collectPlatformDefinitions, loadExtensionContributions,
   mergeConfigContributions, platformConfigContributions, defaultsFromContributions,
   engineConfigContributions,
   createConfigEnvelope, serializeConfigEnvelope, parseConfigInput, mergeConfig,
+  type ParsedData,
+} from '@sns-parse/core'
+import { mergeImages, type MergeLayout } from '@sns-parse/ext-merge'
+import {
   fetchTweetTree, type TweetTree,
   fetchUserTimeline, fetchUserConnections, resolveTwitterUser,
   type TimelineEntry, type TwitterConnectionUser, type TimelineTab,
-  type ParsedData,
-} from '@sns-parse/core'
+} from '@sns-parse/platform-twitter'
 
 const PLUGIN_NAME = 'sns-parse'
 
@@ -536,7 +538,7 @@ async function main(): Promise<void> {
 
   const rt = createRuntime({}, config, {
     defs,
-    defaultExtensions: createCoreExtensions(),
+    defaultExtensions: loadExtensionImplementations(),
   })
 
   let exitCode = 0
