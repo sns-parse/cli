@@ -1,6 +1,6 @@
 {
   "name": "@sns-parse/cli",
-  "version": "0.1.0-alpha.4+upstream.1.6.7",
+  "version": "0.1.0-alpha.6+upstream.1.6.7",
   "description": "sns-parse 命令行兼容层：像 you-get 一样在终端解析/下载全平台视频与图集（引擎与配置声明均来自 @sns-parse/core 与已安装的 platform-*/ext-* 碎片包）",
   "main": "lib/index.js",
   "typings": "lib/index.d.ts",
@@ -29,7 +29,7 @@
     "twitter"
   ],
   "dependencies": {
-    "@sns-parse/core": "^0.4.0-alpha.8",
+    "@sns-parse/core": "^0.4.0-alpha.10",
     "@sns-parse/extensions": "^0.1.0-alpha.2",
     "@sns-parse/platforms": "^0.2.0-alpha.1",
     "axios": "^1.16.1"
