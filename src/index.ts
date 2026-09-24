@@ -13,8 +13,9 @@ import { mkdir, stat, writeFile } from 'fs/promises'
 import { join, resolve, extname } from 'path'
 import {
   linkTypeParser,
-  createRuntime,
-  loadExtensionImplementations,
+    createRuntime,
+    runStage,
+    loadWorkflowExtensions,
   getPlatformConfig,
   parseUrl,
   generateFormattedText, formatDuration, formatPublishTime,
@@ -27,7 +28,7 @@ import {
   createConfigEnvelope, serializeConfigEnvelope, parseConfigInput, mergeConfig,
   type ParsedData,
 } from '@sns-parse/core'
-import { mergeImages, type MergeLayout } from '@sns-parse/ext-merge'
+import type { MergeLayout } from '@sns-parse/ext-merge'
 import {
   fetchTweetTree, type TweetTree,
   fetchUserTimeline, fetchUserConnections, resolveTwitterUser,
@@ -538,7 +539,7 @@ async function main(): Promise<void> {
 
   const rt = createRuntime({}, config, {
     defs,
-    defaultExtensions: loadExtensionImplementations(),
+    extensions: loadWorkflowExtensions(),
   })
 
   let exitCode = 0
@@ -555,7 +556,7 @@ async function main(): Promise<void> {
       // --merge-images：同源切图识别与合并（独立选项，默认关闭）
       let merged: { buffer: Buffer; layout: MergeLayout } | null = null
       if (args.mergeImages && parsed.images.length >= 2) {
-        merged = await mergeImages(rt, parsed.images)
+        merged = (await runStage(rt, 'merge', { urls: parsed.images })) as { buffer: Buffer; layout: MergeLayout } | null
         if (!args.json) {
           if (merged) {
             console.log(`▶ 同源切图: ${parsed.images.length} 片 → 已合并（${layoutDesc(merged.layout)}，${Math.round(merged.buffer.length / 1024)}KB）`)

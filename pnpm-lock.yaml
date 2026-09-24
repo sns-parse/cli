@@ -110,20 +110,20 @@ importers:
   .:
     dependencies:
       '@sns-parse/core':
-        specifier: ^0.5.0-alpha.1
-        version: 0.5.0-alpha.1(debug@4.4.3)
+        specifier: ^0.6.0-alpha.1
+        version: 0.6.0-alpha.1(debug@4.4.3)
       '@sns-parse/ext-merge':
-        specifier: ^0.2.0-alpha.1
-        version: 0.2.0-alpha.1(debug@4.4.3)
+        specifier: ^0.3.0-alpha.1
+        version: 0.3.0-alpha.1(debug@4.4.3)
       '@sns-parse/extensions':
-        specifier: ^0.2.0-alpha.1
-        version: 0.2.0-alpha.1(debug@4.4.3)
+        specifier: ^0.3.0-alpha.1
+        version: 0.3.0-alpha.1(debug@4.4.3)
       '@sns-parse/platform-twitter':
-        specifier: ^0.2.0-alpha.2
-        version: 0.2.0-alpha.2(debug@4.4.3)
+        specifier: ^0.3.0-alpha.1
+        version: 0.3.0-alpha.1(debug@4.4.3)
       '@sns-parse/platforms':
-        specifier: ^0.2.0-alpha.3
-        version: 0.2.0-alpha.3(debug@4.4.3)
+        specifier: ^0.3.0-alpha.1
+        version: 0.3.0-alpha.1(debug@4.4.3)
       axios:
         specifier: ^1.16.1
         version: 1.20.0(debug@4.4.3)
@@ -352,144 +352,140 @@ packages:
     resolution: {integrity: sha512-+1VkjdD0QBLPodGrJUeqarH8VAIvQODIbwh9XpP5Syisf7YoQgsJKPNFoqqLQlu+VQ/tVSshMR6loPMn8U+dPg==}
     engines: {node: '>=14'}
 
-  '@sns-parse/core@0.3.0-alpha.1':
-    resolution: {integrity: sha512-z/ZPrWq+tKdaGLxOSIsiwT5e9HkaauxvvEeDBwGLPlxnQsB5sq1p/hGfq3bRu/3/IK3t8S9UUf6IfYYqzEdRjg==}
+  '@sns-parse/core@0.6.0-alpha.1':
+    resolution: {integrity: sha512-RfzkU0wN+I8ABPC6/2FMJdpEcLBFI1PMxmxnx42yk1kR/TsoTGHyOhpFbLEe9Z6RDBHt5CUHjXNPa6ridpsiPw==}
     engines: {node: '>=16.0.0'}
 
-  '@sns-parse/core@0.5.0-alpha.1':
-    resolution: {integrity: sha512-SsupLxJUvnm3WESfgqfyXoRjlSaHc9/WoGS3q+KFGIQV2b3lrSxzR/0zFF2GJOqazsJALwjnCsFUoZw4rzy/sQ==}
+  '@sns-parse/ext-gif@0.3.0-alpha.1':
+    resolution: {integrity: sha512-piZLetFVT6JBm2fiaA2eQuazwbs7zCNvaWvBOHHaDGal1hHfE0ftuAjbrwk3QvPvmCFHcKW6Fu/8t2FUBx8Kyw==}
     engines: {node: '>=16.0.0'}
 
-  '@sns-parse/ext-gif@0.2.0-alpha.1':
-    resolution: {integrity: sha512-M4e8gpHT+oFAWMFYI+vfF6QXQm/XIkOTNbh3jVmhKxVcaKeM0FB8azv1e7+ZVW+fvaanx7IlHG1drBs0fow3aw==}
+  '@sns-parse/ext-merge@0.3.0-alpha.1':
+    resolution: {integrity: sha512-hksGVqGhFWG0vYw19GKGSJvcBzr7S8mkA0yRvKa2dZKG51MaNK4eV+ymUzU57aWJvohjtcWK8cJbpYbz5DJ2hA==}
     engines: {node: '>=16.0.0'}
 
-  '@sns-parse/ext-merge@0.2.0-alpha.1':
-    resolution: {integrity: sha512-SzQFRtc+4FftQbRTLVGaxczmUbOuQPMBr5HPJvswOdhoogkoi2Ojh33Wt1tCCo1Opm84Im5NX0n8zf+yz5dXhA==}
+  '@sns-parse/ext-nsfw@0.3.0-alpha.1':
+    resolution: {integrity: sha512-HFtq3eZNdwrT8XEHllv+tjyFlKGx2Hc6Bm3vWJH6ZR1eGp5p3X9fZC1X4OWdP7U/A4xMEsR/re1+cUrDg+uC1w==}
     engines: {node: '>=16.0.0'}
 
-  '@sns-parse/ext-nsfw@0.2.0-alpha.3':
-    resolution: {integrity: sha512-pdCPoFg8w/4yyp2yBGYgsnohOXJYQnZrjQuIzaZnwKggh+nEfPKV6GwnCLB37+7s8ZlsLllXhTQQ0eIJvm3+Jw==}
+  '@sns-parse/ext-translate@0.3.0-alpha.1':
+    resolution: {integrity: sha512-SOlhmC/dh/zyCgevpBdpBS9CdNPpSlNK06stO1mkfnkJlXk9uby57mZ50WgtiaH+a0A54wrMeAuiKVAqGJOA4A==}
     engines: {node: '>=16.0.0'}
 
-  '@sns-parse/ext-translate@0.2.0-alpha.1':
-    resolution: {integrity: sha512-5Mrma0xxaoZXsXPbhdV217SaGpqUq8WnwIVd+BQjkL1oK+xgh/fmGHuRTxLAIAn92US4x+1DmjdcPwaJO1caOg==}
+  '@sns-parse/extensions@0.3.0-alpha.1':
+    resolution: {integrity: sha512-DgTdX+57WlbCITFpwIzTKC/7jVME0oIdYT0s5dKP9RS+7Hx6q+ULUacw8yJ3dPbohBfZ+2Hm7VevetHcvheUvg==}
     engines: {node: '>=16.0.0'}
 
-  '@sns-parse/extensions@0.2.0-alpha.1':
-    resolution: {integrity: sha512-VRHHYXlin2DmhiW0mRcoN6qY0qejySVZFjRIcT81QbW3rxq8wGIbweuUT6dgNc9Ivx0HPmxfix4z5YL7EaHQkQ==}
+  '@sns-parse/platform-acfun@0.3.0-alpha.1':
+    resolution: {integrity: sha512-bl5us0Pa+/Y1wskdrHBuLU82w0bCmv6I0YdOUJ4x8TsnXE8MIu4lp2UsFwUhJjIBnwg35LfidBBE/1wiNpXQ7Q==}
     engines: {node: '>=16.0.0'}
 
-  '@sns-parse/platform-acfun@0.2.0-alpha.1':
-    resolution: {integrity: sha512-QuNp/XqjqHuoAVMEzkHs9ls5RnsXxXf2RV294quf490HQUZZep5cW5BJkokLrw3b12VXaPmKF2/wHnn8yKFM4w==}
+  '@sns-parse/platform-bilibili@0.3.0-alpha.1':
+    resolution: {integrity: sha512-3ZgFc47xjEUrdYwnw/p7zGzbgz4Y9L6uH4TddlrgWbf69sV9hseY/zpbfE7Iw7AxAmT0E0xEStoIurOPrjdwwQ==}
     engines: {node: '>=16.0.0'}
 
-  '@sns-parse/platform-bilibili@0.2.0-alpha.1':
-    resolution: {integrity: sha512-rAkctmVNQpKmVuw1lK5AH6HcHNrS1/iV02eTv/UqWEt/FlrBwj5P15AFw9bLlULDhMkyizfW23uZ1+W25cOsUw==}
+  '@sns-parse/platform-doubao@0.3.0-alpha.1':
+    resolution: {integrity: sha512-jxZKZb5dezKFuxgIRb3pXfR1xLKjqOmy21uxD0qM9/vukrVnJ15gZRn+v0xabKRWkkiHvoLVYMtys5TOLanZGg==}
     engines: {node: '>=16.0.0'}
 
-  '@sns-parse/platform-doubao@0.2.0-alpha.1':
-    resolution: {integrity: sha512-zDktf9FNOuIaANEJTwZz6fQMkTI5JzH57FkJLefTX+vt2aHBY+01o2MC5Ch5XqHm6Jaw11dP+9+wc1sN+7mESg==}
+  '@sns-parse/platform-doubao_image@0.3.0-alpha.1':
+    resolution: {integrity: sha512-F5q+w3kanbgNEMK/DpDfeghHtCdHCwXqj9FR8p5zOBZWbQ5S4HCg6ZvrHa7QebzccLsquZBfYKVnVeClknenHg==}
     engines: {node: '>=16.0.0'}
 
-  '@sns-parse/platform-doubao_image@0.2.0-alpha.1':
-    resolution: {integrity: sha512-F5Z/V3ZNfNpP07dwd9Nc8w7oAP8CZfo76MqWNvzIJUTYelImYuW1BSNd5k5frnheydGbUWp5porAcVu6peW8ZQ==}
+  '@sns-parse/platform-douyin@0.3.0-alpha.1':
+    resolution: {integrity: sha512-4MHdvLyBXv04E/b2Dc69BsnPUNYrlLiTqSFdavtv3ELV6Ybv50Nep4xAbBJkAr9B/SMbx8XQQJRbOo+KlQdxDw==}
     engines: {node: '>=16.0.0'}
 
-  '@sns-parse/platform-douyin@0.2.0-alpha.1':
-    resolution: {integrity: sha512-LV6+RTcAl+Zz9pk6L37nKWTlGvJnqzVuEkQYcYgdG79MDx+yR5XZZzY+A9uzpLboX1B03lGiXsc5ZdKUCEQAjg==}
+  '@sns-parse/platform-haokan@0.3.0-alpha.1':
+    resolution: {integrity: sha512-GxW3XLf4tlqwgrjj21mzHpktJ0gSCJb87CyLWJgCQX+dIHvbq63kqo/I8YOlWghnjmCG4+lWCp9O/XEZW992WA==}
     engines: {node: '>=16.0.0'}
 
-  '@sns-parse/platform-haokan@0.2.0-alpha.1':
-    resolution: {integrity: sha512-D3EPq+MFyO2HwtfdMgcV6WHH5nlHu8Q3WsX6PGhbd5AFrHw9LenWrJw0/1JYRBKZvMT48QX4Fvuk6zAysFTtxg==}
+  '@sns-parse/platform-huya@0.3.0-alpha.1':
+    resolution: {integrity: sha512-7gGpdLZ8ALtQZJWhbF1wB6Kja+J6pCTF3DcoZBVWy5IJP5CJUKeyP0pSgUFhhHg2RKNOG+wRLuHZIr8LLyXM7Q==}
     engines: {node: '>=16.0.0'}
 
-  '@sns-parse/platform-huya@0.2.0-alpha.1':
-    resolution: {integrity: sha512-kUwbJ2lNYLMjkst0AZGxu9awEh/qZilxponP95oxjGLZ+nZ1PaTdOlqq/EPmvB7S22z+LQNrUstTc23HgybMtw==}
+  '@sns-parse/platform-instagram@0.3.0-alpha.1':
+    resolution: {integrity: sha512-b5DJizYhXadMUqJQ9YaqXk5UQiRdErp0Mq3h+deRm4ig8fpeR3iLzgkCWPmNcRbnNgybAgPCmtscwCJfM1j5fA==}
     engines: {node: '>=16.0.0'}
 
-  '@sns-parse/platform-instagram@0.2.0-alpha.1':
-    resolution: {integrity: sha512-c3/oysZk4B/FbzcJAw3fsRLvczsD56RwAQk3SOIPdGd0E/EBT9Sm758rrgEMObqFNeoNShXd1ezqC7/qDATN0Q==}
+  '@sns-parse/platform-jimeng@0.3.0-alpha.1':
+    resolution: {integrity: sha512-iKgg0LX6CI/5gYABcyvMm5Wh2kiRdtjA7N5yNAACkvyAbSjbUk/TZhCuY2BE4TmhBgIlSiGTkIUO572LSq+GyA==}
     engines: {node: '>=16.0.0'}
 
-  '@sns-parse/platform-jimeng@0.2.0-alpha.1':
-    resolution: {integrity: sha512-HHNiABF0IX9ywiM9YWzRMYqDqS2u/j4bg3E0c4dNER/0h5ULuM8dGEYxxrp/ezEqdFhGkLgCf3tVqdr0T69lkg==}
+  '@sns-parse/platform-kuaishou@0.3.0-alpha.1':
+    resolution: {integrity: sha512-RHJztNyz8ls8nxdn09j25qneM+VnBNxgcEwecOPcrJCA0ae+haDtRoY7+UUo1yHnB6PXKsAvfzuQACTmL8zArw==}
     engines: {node: '>=16.0.0'}
 
-  '@sns-parse/platform-kuaishou@0.2.0-alpha.1':
-    resolution: {integrity: sha512-uOhxnIJMq6InJ9ie0V3B4FC4nfbm0xhnpYsFfrbDJm0P5/n9UpsT447ydJ08bnnPcCT2qt4uv7u2Y2o9CSq35Q==}
+  '@sns-parse/platform-lishi@0.3.0-alpha.1':
+    resolution: {integrity: sha512-mcplh0NBgSYvFQKgbBH1oZeKrnIAwJtrD9/q22qjfOmbLpDaXNT2SeE/FnfckjiF/WakKDG2TgDum9lhDnTjIQ==}
     engines: {node: '>=16.0.0'}
 
-  '@sns-parse/platform-lishi@0.2.0-alpha.1':
-    resolution: {integrity: sha512-VqYMRKCSnXInxX/BBuTcmQEuFJVWa5v+pHGdah9NUMcKSZgMUh7DJtXtI2kZ3ziAzCpoLhpqJ+4TI7GwqzCxgA==}
+  '@sns-parse/platform-meipai@0.3.0-alpha.1':
+    resolution: {integrity: sha512-Y31F3mkH5ugFxkz93Ddb8nv63vfE2Olk/krHwuC9xHiZehRNxLMwkmhdQvRIyPmfEhmxNw3Mrkd+3aeWWeUSSA==}
     engines: {node: '>=16.0.0'}
 
-  '@sns-parse/platform-meipai@0.2.0-alpha.1':
-    resolution: {integrity: sha512-FmpuxvI10BmuQtXMf5z3iCXS6SeLqhKA4ub9EP/+sRcLYvPnAqoJKPKQblserXP3pNZ7j1DBQacWVkkT6EMPRw==}
+  '@sns-parse/platform-oasis@0.3.0-alpha.1':
+    resolution: {integrity: sha512-7kjQ3ozE5o/XvpV7tx3cZNEoEuyEtOCVWH085uIngQx0qsFedf5DfAN3Z7NEbtK+KLfnmwuT/bV6rs28tY/kow==}
     engines: {node: '>=16.0.0'}
 
-  '@sns-parse/platform-oasis@0.2.0-alpha.1':
-    resolution: {integrity: sha512-1FfQGU6IAXY/Mv2xYALUv8AijfKcfNRaK4eSYTZJu/d4Cnsm+vlwhNrKrLs36d8llgc5FI733khaFpIQsdXmlg==}
+  '@sns-parse/platform-pipigx@0.3.0-alpha.1':
+    resolution: {integrity: sha512-1GDj06Al1wlWuzdNnJ85pwsmRG49l/XVns6ei9oS6e4L3nWrBeu0C3D6JmJe1+pk2+muToO37NqKcat9atv6nA==}
     engines: {node: '>=16.0.0'}
 
-  '@sns-parse/platform-pipigx@0.2.0-alpha.1':
-    resolution: {integrity: sha512-+T3b23gjEqF/QtM+4p3DJIAPZnGv6Ao0bBzsjSeDvmomhfiaZWNN8eOsqjXX0rSOXnPckeT8EClr4+RZXD0gFA==}
+  '@sns-parse/platform-pipixia@0.3.0-alpha.1':
+    resolution: {integrity: sha512-B6RmALhA2St68cb2dCfYTB6RxZitKBbaEzVPpKO3kMG9mVtNAMYHymR8md6xPCqNGPexcnfimVE8lAZEWUjNbQ==}
     engines: {node: '>=16.0.0'}
 
-  '@sns-parse/platform-pipixia@0.2.0-alpha.1':
-    resolution: {integrity: sha512-Ng+kVb8RSNpecZlZMo7JY/jlha89wodhvjqXRuJHevRD9dUIYuAwJW5bFDyv0h7kT0HsRAR8YXslgyeA/SYhpQ==}
+  '@sns-parse/platform-quanmin@0.3.0-alpha.1':
+    resolution: {integrity: sha512-Wxo6bfVo2AB/PDnzDCpFc3lMrHqtW9bRBpaKzu0R3KkMntaFTUnzXX0CvwStl1A8/ohiL6QMcd5Qyegb4snxDg==}
     engines: {node: '>=16.0.0'}
 
-  '@sns-parse/platform-quanmin@0.2.0-alpha.1':
-    resolution: {integrity: sha512-7isRTb4rDG0Hc6rhIOse6FHlfOgiDdMHOmjJJbeCrYuZpomPnHSg9Tg8L+UXP9XsUqeHKlGBr7dVzaWE2p1PxA==}
+  '@sns-parse/platform-tiktok@0.3.0-alpha.1':
+    resolution: {integrity: sha512-iydMgvFzq+1y7CBHDq9hQQcTJflnBee3il7vz6TLA8eLMahSBfmSztqORgTgSXADlDiTB7YUNaWPga5toeI67A==}
     engines: {node: '>=16.0.0'}
 
-  '@sns-parse/platform-tiktok@0.2.0-alpha.1':
-    resolution: {integrity: sha512-vYOGM/J1Iz6nJJHkbnms1cmP3dTIYAOGL7B0nrnxBYxI3lp8/gIpzbWURazsZ1OxomCJ+NqSI2u/eW6Ze/BA2w==}
+  '@sns-parse/platform-toutiao@0.3.0-alpha.1':
+    resolution: {integrity: sha512-lAkreV9klbPv05TNNuiMBrQm0HS00tQp8gTsxr6aD31bm91sBsuLSJqSN+floIHGyGbk96ZNjBkPC+hYTCGVVA==}
     engines: {node: '>=16.0.0'}
 
-  '@sns-parse/platform-toutiao@0.2.0-alpha.1':
-    resolution: {integrity: sha512-UX49gCWLhcmBIUI3P7Jjr4+1W2fgbA+B3+PY3PU4b65orYScKfo35lPlzGtuEx+1o0UBBcmhiWNFj2IsOg2nGw==}
+  '@sns-parse/platform-twitter@0.3.0-alpha.1':
+    resolution: {integrity: sha512-lN79GDQFJNfOfHtJb3luQhOA2qPA+4bGx1DEcSwY7pmThIp1GX6Zj7TqKHA/NoRu9y/uB+DXcL8LpFD7iX7FCQ==}
     engines: {node: '>=16.0.0'}
 
-  '@sns-parse/platform-twitter@0.2.0-alpha.2':
-    resolution: {integrity: sha512-gHwbwre4IEnGwPvMp7GgCrZVx/1zZu8jUTN1/XHUSCxrjBOR1IY5gm/g3aLiHK5yq+ubRYTpjNcrf2NEMBvjkA==}
+  '@sns-parse/platform-wechat_channel@0.3.0-alpha.1':
+    resolution: {integrity: sha512-lhzS8a5BjVzxLK/0Zf5GlU+4dCj1wr00g2JQyXZzzD9YeFQmHKlH6bLFK1Zg80zZ1J+qq26XiZe54AruCb+2gw==}
     engines: {node: '>=16.0.0'}
 
-  '@sns-parse/platform-wechat_channel@0.2.0-alpha.1':
-    resolution: {integrity: sha512-3decmAy8s/1UmrQkioe4VB2QhwNxkNZr3FK9ttKSkp9mIXtkLS73ZDOlW7nvQxbsP61dWRVyHCFGJ655RDQvlA==}
+  '@sns-parse/platform-weibo@0.3.0-alpha.1':
+    resolution: {integrity: sha512-3XAq8njJ2JoVMuDz35+vdsy34Tv4HAS0/erX/M3X47FnyGqXUmDxowIqBVdAYhap0ZCnSdKViVkYYxR/wqs9Qw==}
     engines: {node: '>=16.0.0'}
 
-  '@sns-parse/platform-weibo@0.2.0-alpha.1':
-    resolution: {integrity: sha512-5fyDGRPsQTYY1WNuxA8KMMEB7M080dzt7xmCv4AGn3oAENdQ1obcbvdX61CEgf5CA6R9nlRLRgxSaeJZnJ10Lw==}
+  '@sns-parse/platform-weishi@0.3.0-alpha.1':
+    resolution: {integrity: sha512-KuiUhvHGqS2tTRlv7oP/U+Qx1JZM7LJF0Dy0YSzpNJEj8Qw7v2mlZPHknWyaIP9exNoa+Xp6SAYdmi+nBUC6xw==}
     engines: {node: '>=16.0.0'}
 
-  '@sns-parse/platform-weishi@0.2.0-alpha.1':
-    resolution: {integrity: sha512-WeGy5pfRsDCmuzgoPUebkwUifmupxY065QGDpnU/MIEyX7hG30feuVHrU3vbmvDsrHFcPE7sXdZTGI6rM8o+ug==}
+  '@sns-parse/platform-xiaohongshu@0.3.0-alpha.1':
+    resolution: {integrity: sha512-+5zw1lkTS6syNxTDa48R2du4Yqxva4YfV78LdVrLpUMuvJv9X7eLAgF72vyD6CGduCGlc28v91Osw9xAutC1gA==}
     engines: {node: '>=16.0.0'}
 
-  '@sns-parse/platform-xiaohongshu@0.2.0-alpha.1':
-    resolution: {integrity: sha512-RPdb0SOJIuux4Elg9WXe4gQ8QcErxgKxQGp73DQC65VJyQjLrxIE/zHtW5KAcWc4VbF+yi2NFq83anslj8FVGg==}
+  '@sns-parse/platform-xigua@0.3.0-alpha.1':
+    resolution: {integrity: sha512-nnEm+qU2JLeoq5YYV5u5pIn9szbhW5xJOoh0F16F9seNKyOPBGKaVkGm+RtIS8GET0geBcpTujS6mXjrVRnWnQ==}
     engines: {node: '>=16.0.0'}
 
-  '@sns-parse/platform-xigua@0.2.0-alpha.1':
-    resolution: {integrity: sha512-9VXvaCw4yJzD6Bgkl4xUpTtqKKDOxy+yD2TMJ50VxPipPh+mPMtmGYQXyitoDTeKImZlhNr8E3dGtipad5f7OQ==}
+  '@sns-parse/platform-youtube@0.3.0-alpha.1':
+    resolution: {integrity: sha512-fBdPw0Z1gfiNcJ7Sc54kyr/vZ/SAanXqpiYyOzvIEFL0vCF1Dvsm2iCvYXX9+huft6RiSzTaScqGia1fdxwLPQ==}
     engines: {node: '>=16.0.0'}
 
-  '@sns-parse/platform-youtube@0.2.0-alpha.1':
-    resolution: {integrity: sha512-dqkBl+iOQdhYjzByw+Hiam0Lao/+94v8Q4Qzfys+18lelUlKyoG64NNqO4J/QTRyRoRKlAKqI3rRjSPOQCvoHg==}
+  '@sns-parse/platform-zhihu@0.3.0-alpha.1':
+    resolution: {integrity: sha512-JtERdJWJzJaDYqo5PsUgn+arMP+VCC4xyW9b0mRF9KeRCd30r1ptTX7jiOKcsChSh04G5qzGkLrAHApca6d1Gg==}
     engines: {node: '>=16.0.0'}
 
-  '@sns-parse/platform-zhihu@0.2.0-alpha.1':
-    resolution: {integrity: sha512-ZfyYy7bBfoI/i1NcSRwFf14fUnduAEJVjOtLJz1s21aRq8r6iiSOE4F3mRzhmX9AhZ7wjEKRvdI+MXQ7Nc9YXw==}
+  '@sns-parse/platform-zuiyou@0.3.0-alpha.1':
+    resolution: {integrity: sha512-nirBkC89+Tedm1xK01ROpuK6oKgWHzVZRSPORX1VGpjm/uNZk3cHUbGbGmoB00GzTApmaJK7yEz/R9/gzLRlNg==}
     engines: {node: '>=16.0.0'}
 
-  '@sns-parse/platform-zuiyou@0.2.0-alpha.1':
-    resolution: {integrity: sha512-sgDs1nAWbJh5/AqxEq7LoKhY5KceWtZlujN4I2BveZ/h9nSdXgKIHWh6i4v42YUm/Mfkncs7YPavq/pCW7laNQ==}
-    engines: {node: '>=16.0.0'}
-
-  '@sns-parse/platforms@0.2.0-alpha.3':
-    resolution: {integrity: sha512-tJbJ3Y6Au1+DRUobKMZ+N6q4U5jO/u8cszFWNpLCELu6Nlv0gjZ4QsaTSxwSUrrEJgzEjS0C/maDd118NcCNKQ==}
+  '@sns-parse/platforms@0.3.0-alpha.1':
+    resolution: {integrity: sha512-IeiydtcNdn2THdm/Jtmy6LdysR2zhO7q02IPnnTwy4lQpqvQ4aPQcMXVB4+u0dvXCp69rDUSO7h7UhJySR5ZrA==}
     engines: {node: '>=16.0.0'}
 
   '@types/node@10.17.60':
@@ -938,9 +934,7 @@ snapshots:
   '@pkgjs/parseargs@0.11.0':
     optional: true
 
-  '@sns-parse/core@0.3.0-alpha.1': {}
-
-  '@sns-parse/core@0.5.0-alpha.1(debug@4.4.3)':
+  '@sns-parse/core@0.6.0-alpha.1(debug@4.4.3)':
     dependencies:
       axios: 1.20.0(debug@4.4.3)
       https-proxy-agent: 5.0.1
@@ -951,193 +945,271 @@ snapshots:
       - debug
       - supports-color
 
-  '@sns-parse/ext-gif@0.2.0-alpha.1(debug@4.4.3)':
+  '@sns-parse/ext-gif@0.3.0-alpha.1(debug@4.4.3)':
     dependencies:
-      '@sns-parse/core': 0.5.0-alpha.1(debug@4.4.3)
+      '@sns-parse/core': 0.6.0-alpha.1(debug@4.4.3)
     optionalDependencies:
       ffmpeg-static: 5.3.0
     transitivePeerDependencies:
       - debug
       - supports-color
 
-  '@sns-parse/ext-merge@0.2.0-alpha.1(debug@4.4.3)':
+  '@sns-parse/ext-merge@0.3.0-alpha.1(debug@4.4.3)':
     dependencies:
-      '@sns-parse/core': 0.5.0-alpha.1(debug@4.4.3)
-      '@sns-parse/ext-gif': 0.2.0-alpha.1(debug@4.4.3)
+      '@sns-parse/core': 0.6.0-alpha.1(debug@4.4.3)
+      '@sns-parse/ext-gif': 0.3.0-alpha.1(debug@4.4.3)
     optionalDependencies:
       ffmpeg-static: 5.3.0
     transitivePeerDependencies:
       - debug
       - supports-color
 
-  '@sns-parse/ext-nsfw@0.2.0-alpha.3(debug@4.4.3)':
+  '@sns-parse/ext-nsfw@0.3.0-alpha.1(debug@4.4.3)':
     dependencies:
-      '@sns-parse/core': 0.5.0-alpha.1(debug@4.4.3)
+      '@sns-parse/core': 0.6.0-alpha.1(debug@4.4.3)
       axios: 1.20.0(debug@4.4.3)
     transitivePeerDependencies:
       - debug
       - supports-color
 
-  '@sns-parse/ext-translate@0.2.0-alpha.1(debug@4.4.3)':
+  '@sns-parse/ext-translate@0.3.0-alpha.1(debug@4.4.3)':
     dependencies:
-      '@sns-parse/core': 0.5.0-alpha.1(debug@4.4.3)
+      '@sns-parse/core': 0.6.0-alpha.1(debug@4.4.3)
       axios: 1.20.0(debug@4.4.3)
     transitivePeerDependencies:
       - debug
       - supports-color
 
-  '@sns-parse/extensions@0.2.0-alpha.1(debug@4.4.3)':
+  '@sns-parse/extensions@0.3.0-alpha.1(debug@4.4.3)':
     dependencies:
-      '@sns-parse/ext-gif': 0.2.0-alpha.1(debug@4.4.3)
-      '@sns-parse/ext-merge': 0.2.0-alpha.1(debug@4.4.3)
-      '@sns-parse/ext-nsfw': 0.2.0-alpha.3(debug@4.4.3)
-      '@sns-parse/ext-translate': 0.2.0-alpha.1(debug@4.4.3)
+      '@sns-parse/ext-gif': 0.3.0-alpha.1(debug@4.4.3)
+      '@sns-parse/ext-merge': 0.3.0-alpha.1(debug@4.4.3)
+      '@sns-parse/ext-nsfw': 0.3.0-alpha.1(debug@4.4.3)
+      '@sns-parse/ext-translate': 0.3.0-alpha.1(debug@4.4.3)
     transitivePeerDependencies:
       - debug
       - supports-color
 
-  '@sns-parse/platform-acfun@0.2.0-alpha.1':
+  '@sns-parse/platform-acfun@0.3.0-alpha.1(debug@4.4.3)':
     dependencies:
-      '@sns-parse/core': 0.3.0-alpha.1
+      '@sns-parse/core': 0.6.0-alpha.1(debug@4.4.3)
+    transitivePeerDependencies:
+      - debug
+      - supports-color
 
-  '@sns-parse/platform-bilibili@0.2.0-alpha.1':
+  '@sns-parse/platform-bilibili@0.3.0-alpha.1(debug@4.4.3)':
     dependencies:
-      '@sns-parse/core': 0.3.0-alpha.1
+      '@sns-parse/core': 0.6.0-alpha.1(debug@4.4.3)
+    transitivePeerDependencies:
+      - debug
+      - supports-color
 
-  '@sns-parse/platform-doubao@0.2.0-alpha.1':
+  '@sns-parse/platform-doubao@0.3.0-alpha.1(debug@4.4.3)':
     dependencies:
-      '@sns-parse/core': 0.3.0-alpha.1
+      '@sns-parse/core': 0.6.0-alpha.1(debug@4.4.3)
+    transitivePeerDependencies:
+      - debug
+      - supports-color
 
-  '@sns-parse/platform-doubao_image@0.2.0-alpha.1':
+  '@sns-parse/platform-doubao_image@0.3.0-alpha.1(debug@4.4.3)':
     dependencies:
-      '@sns-parse/core': 0.3.0-alpha.1
+      '@sns-parse/core': 0.6.0-alpha.1(debug@4.4.3)
+    transitivePeerDependencies:
+      - debug
+      - supports-color
 
-  '@sns-parse/platform-douyin@0.2.0-alpha.1':
+  '@sns-parse/platform-douyin@0.3.0-alpha.1(debug@4.4.3)':
     dependencies:
-      '@sns-parse/core': 0.3.0-alpha.1
+      '@sns-parse/core': 0.6.0-alpha.1(debug@4.4.3)
+    transitivePeerDependencies:
+      - debug
+      - supports-color
 
-  '@sns-parse/platform-haokan@0.2.0-alpha.1':
+  '@sns-parse/platform-haokan@0.3.0-alpha.1(debug@4.4.3)':
     dependencies:
-      '@sns-parse/core': 0.3.0-alpha.1
+      '@sns-parse/core': 0.6.0-alpha.1(debug@4.4.3)
+    transitivePeerDependencies:
+      - debug
+      - supports-color
 
-  '@sns-parse/platform-huya@0.2.0-alpha.1':
+  '@sns-parse/platform-huya@0.3.0-alpha.1(debug@4.4.3)':
     dependencies:
-      '@sns-parse/core': 0.3.0-alpha.1
+      '@sns-parse/core': 0.6.0-alpha.1(debug@4.4.3)
+    transitivePeerDependencies:
+      - debug
+      - supports-color
 
-  '@sns-parse/platform-instagram@0.2.0-alpha.1':
+  '@sns-parse/platform-instagram@0.3.0-alpha.1(debug@4.4.3)':
     dependencies:
-      '@sns-parse/core': 0.3.0-alpha.1
+      '@sns-parse/core': 0.6.0-alpha.1(debug@4.4.3)
+    transitivePeerDependencies:
+      - debug
+      - supports-color
 
-  '@sns-parse/platform-jimeng@0.2.0-alpha.1':
+  '@sns-parse/platform-jimeng@0.3.0-alpha.1(debug@4.4.3)':
     dependencies:
-      '@sns-parse/core': 0.3.0-alpha.1
+      '@sns-parse/core': 0.6.0-alpha.1(debug@4.4.3)
+    transitivePeerDependencies:
+      - debug
+      - supports-color
 
-  '@sns-parse/platform-kuaishou@0.2.0-alpha.1':
+  '@sns-parse/platform-kuaishou@0.3.0-alpha.1(debug@4.4.3)':
     dependencies:
-      '@sns-parse/core': 0.3.0-alpha.1
+      '@sns-parse/core': 0.6.0-alpha.1(debug@4.4.3)
+    transitivePeerDependencies:
+      - debug
+      - supports-color
 
-  '@sns-parse/platform-lishi@0.2.0-alpha.1':
+  '@sns-parse/platform-lishi@0.3.0-alpha.1(debug@4.4.3)':
     dependencies:
-      '@sns-parse/core': 0.3.0-alpha.1
+      '@sns-parse/core': 0.6.0-alpha.1(debug@4.4.3)
+    transitivePeerDependencies:
+      - debug
+      - supports-color
 
-  '@sns-parse/platform-meipai@0.2.0-alpha.1':
+  '@sns-parse/platform-meipai@0.3.0-alpha.1(debug@4.4.3)':
     dependencies:
-      '@sns-parse/core': 0.3.0-alpha.1
+      '@sns-parse/core': 0.6.0-alpha.1(debug@4.4.3)
+    transitivePeerDependencies:
+      - debug
+      - supports-color
 
-  '@sns-parse/platform-oasis@0.2.0-alpha.1':
+  '@sns-parse/platform-oasis@0.3.0-alpha.1(debug@4.4.3)':
     dependencies:
-      '@sns-parse/core': 0.3.0-alpha.1
+      '@sns-parse/core': 0.6.0-alpha.1(debug@4.4.3)
+    transitivePeerDependencies:
+      - debug
+      - supports-color
 
-  '@sns-parse/platform-pipigx@0.2.0-alpha.1':
+  '@sns-parse/platform-pipigx@0.3.0-alpha.1(debug@4.4.3)':
     dependencies:
-      '@sns-parse/core': 0.3.0-alpha.1
+      '@sns-parse/core': 0.6.0-alpha.1(debug@4.4.3)
+    transitivePeerDependencies:
+      - debug
+      - supports-color
 
-  '@sns-parse/platform-pipixia@0.2.0-alpha.1':
+  '@sns-parse/platform-pipixia@0.3.0-alpha.1(debug@4.4.3)':
     dependencies:
-      '@sns-parse/core': 0.3.0-alpha.1
+      '@sns-parse/core': 0.6.0-alpha.1(debug@4.4.3)
+    transitivePeerDependencies:
+      - debug
+      - supports-color
 
-  '@sns-parse/platform-quanmin@0.2.0-alpha.1':
+  '@sns-parse/platform-quanmin@0.3.0-alpha.1(debug@4.4.3)':
     dependencies:
-      '@sns-parse/core': 0.3.0-alpha.1
+      '@sns-parse/core': 0.6.0-alpha.1(debug@4.4.3)
+    transitivePeerDependencies:
+      - debug
+      - supports-color
 
-  '@sns-parse/platform-tiktok@0.2.0-alpha.1':
+  '@sns-parse/platform-tiktok@0.3.0-alpha.1(debug@4.4.3)':
     dependencies:
-      '@sns-parse/core': 0.3.0-alpha.1
+      '@sns-parse/core': 0.6.0-alpha.1(debug@4.4.3)
+    transitivePeerDependencies:
+      - debug
+      - supports-color
 
-  '@sns-parse/platform-toutiao@0.2.0-alpha.1':
+  '@sns-parse/platform-toutiao@0.3.0-alpha.1(debug@4.4.3)':
     dependencies:
-      '@sns-parse/core': 0.3.0-alpha.1
+      '@sns-parse/core': 0.6.0-alpha.1(debug@4.4.3)
+    transitivePeerDependencies:
+      - debug
+      - supports-color
 
-  '@sns-parse/platform-twitter@0.2.0-alpha.2(debug@4.4.3)':
+  '@sns-parse/platform-twitter@0.3.0-alpha.1(debug@4.4.3)':
     dependencies:
-      '@sns-parse/core': 0.5.0-alpha.1(debug@4.4.3)
+      '@sns-parse/core': 0.6.0-alpha.1(debug@4.4.3)
       axios: 1.20.0(debug@4.4.3)
     transitivePeerDependencies:
       - debug
       - supports-color
 
-  '@sns-parse/platform-wechat_channel@0.2.0-alpha.1':
+  '@sns-parse/platform-wechat_channel@0.3.0-alpha.1(debug@4.4.3)':
     dependencies:
-      '@sns-parse/core': 0.3.0-alpha.1
+      '@sns-parse/core': 0.6.0-alpha.1(debug@4.4.3)
+    transitivePeerDependencies:
+      - debug
+      - supports-color
 
-  '@sns-parse/platform-weibo@0.2.0-alpha.1':
+  '@sns-parse/platform-weibo@0.3.0-alpha.1(debug@4.4.3)':
     dependencies:
-      '@sns-parse/core': 0.3.0-alpha.1
+      '@sns-parse/core': 0.6.0-alpha.1(debug@4.4.3)
+    transitivePeerDependencies:
+      - debug
+      - supports-color
 
-  '@sns-parse/platform-weishi@0.2.0-alpha.1':
+  '@sns-parse/platform-weishi@0.3.0-alpha.1(debug@4.4.3)':
     dependencies:
-      '@sns-parse/core': 0.3.0-alpha.1
+      '@sns-parse/core': 0.6.0-alpha.1(debug@4.4.3)
+    transitivePeerDependencies:
+      - debug
+      - supports-color
 
-  '@sns-parse/platform-xiaohongshu@0.2.0-alpha.1':
+  '@sns-parse/platform-xiaohongshu@0.3.0-alpha.1(debug@4.4.3)':
     dependencies:
-      '@sns-parse/core': 0.3.0-alpha.1
+      '@sns-parse/core': 0.6.0-alpha.1(debug@4.4.3)
+    transitivePeerDependencies:
+      - debug
+      - supports-color
 
-  '@sns-parse/platform-xigua@0.2.0-alpha.1':
+  '@sns-parse/platform-xigua@0.3.0-alpha.1(debug@4.4.3)':
     dependencies:
-      '@sns-parse/core': 0.3.0-alpha.1
+      '@sns-parse/core': 0.6.0-alpha.1(debug@4.4.3)
+    transitivePeerDependencies:
+      - debug
+      - supports-color
 
-  '@sns-parse/platform-youtube@0.2.0-alpha.1':
+  '@sns-parse/platform-youtube@0.3.0-alpha.1(debug@4.4.3)':
     dependencies:
-      '@sns-parse/core': 0.3.0-alpha.1
+      '@sns-parse/core': 0.6.0-alpha.1(debug@4.4.3)
+    transitivePeerDependencies:
+      - debug
+      - supports-color
 
-  '@sns-parse/platform-zhihu@0.2.0-alpha.1':
+  '@sns-parse/platform-zhihu@0.3.0-alpha.1(debug@4.4.3)':
     dependencies:
-      '@sns-parse/core': 0.3.0-alpha.1
+      '@sns-parse/core': 0.6.0-alpha.1(debug@4.4.3)
+    transitivePeerDependencies:
+      - debug
+      - supports-color
 
-  '@sns-parse/platform-zuiyou@0.2.0-alpha.1':
+  '@sns-parse/platform-zuiyou@0.3.0-alpha.1(debug@4.4.3)':
     dependencies:
-      '@sns-parse/core': 0.3.0-alpha.1
+      '@sns-parse/core': 0.6.0-alpha.1(debug@4.4.3)
+    transitivePeerDependencies:
+      - debug
+      - supports-color
 
-  '@sns-parse/platforms@0.2.0-alpha.3(debug@4.4.3)':
+  '@sns-parse/platforms@0.3.0-alpha.1(debug@4.4.3)':
     dependencies:
-      '@sns-parse/core': 0.3.0-alpha.1
-      '@sns-parse/platform-acfun': 0.2.0-alpha.1
-      '@sns-parse/platform-bilibili': 0.2.0-alpha.1
-      '@sns-parse/platform-doubao': 0.2.0-alpha.1
-      '@sns-parse/platform-doubao_image': 0.2.0-alpha.1
-      '@sns-parse/platform-douyin': 0.2.0-alpha.1
-      '@sns-parse/platform-haokan': 0.2.0-alpha.1
-      '@sns-parse/platform-huya': 0.2.0-alpha.1
-      '@sns-parse/platform-instagram': 0.2.0-alpha.1
-      '@sns-parse/platform-jimeng': 0.2.0-alpha.1
-      '@sns-parse/platform-kuaishou': 0.2.0-alpha.1
-      '@sns-parse/platform-lishi': 0.2.0-alpha.1
-      '@sns-parse/platform-meipai': 0.2.0-alpha.1
-      '@sns-parse/platform-oasis': 0.2.0-alpha.1
-      '@sns-parse/platform-pipigx': 0.2.0-alpha.1
-      '@sns-parse/platform-pipixia': 0.2.0-alpha.1
-      '@sns-parse/platform-quanmin': 0.2.0-alpha.1
-      '@sns-parse/platform-tiktok': 0.2.0-alpha.1
-      '@sns-parse/platform-toutiao': 0.2.0-alpha.1
-      '@sns-parse/platform-twitter': 0.2.0-alpha.2(debug@4.4.3)
-      '@sns-parse/platform-wechat_channel': 0.2.0-alpha.1
-      '@sns-parse/platform-weibo': 0.2.0-alpha.1
-      '@sns-parse/platform-weishi': 0.2.0-alpha.1
-      '@sns-parse/platform-xiaohongshu': 0.2.0-alpha.1
-      '@sns-parse/platform-xigua': 0.2.0-alpha.1
-      '@sns-parse/platform-youtube': 0.2.0-alpha.1
-      '@sns-parse/platform-zhihu': 0.2.0-alpha.1
-      '@sns-parse/platform-zuiyou': 0.2.0-alpha.1
+      '@sns-parse/core': 0.6.0-alpha.1(debug@4.4.3)
+      '@sns-parse/platform-acfun': 0.3.0-alpha.1(debug@4.4.3)
+      '@sns-parse/platform-bilibili': 0.3.0-alpha.1(debug@4.4.3)
+      '@sns-parse/platform-doubao': 0.3.0-alpha.1(debug@4.4.3)
+      '@sns-parse/platform-doubao_image': 0.3.0-alpha.1(debug@4.4.3)
+      '@sns-parse/platform-douyin': 0.3.0-alpha.1(debug@4.4.3)
+      '@sns-parse/platform-haokan': 0.3.0-alpha.1(debug@4.4.3)
+      '@sns-parse/platform-huya': 0.3.0-alpha.1(debug@4.4.3)
+      '@sns-parse/platform-instagram': 0.3.0-alpha.1(debug@4.4.3)
+      '@sns-parse/platform-jimeng': 0.3.0-alpha.1(debug@4.4.3)
+      '@sns-parse/platform-kuaishou': 0.3.0-alpha.1(debug@4.4.3)
+      '@sns-parse/platform-lishi': 0.3.0-alpha.1(debug@4.4.3)
+      '@sns-parse/platform-meipai': 0.3.0-alpha.1(debug@4.4.3)
+      '@sns-parse/platform-oasis': 0.3.0-alpha.1(debug@4.4.3)
+      '@sns-parse/platform-pipigx': 0.3.0-alpha.1(debug@4.4.3)
+      '@sns-parse/platform-pipixia': 0.3.0-alpha.1(debug@4.4.3)
+      '@sns-parse/platform-quanmin': 0.3.0-alpha.1(debug@4.4.3)
+      '@sns-parse/platform-tiktok': 0.3.0-alpha.1(debug@4.4.3)
+      '@sns-parse/platform-toutiao': 0.3.0-alpha.1(debug@4.4.3)
+      '@sns-parse/platform-twitter': 0.3.0-alpha.1(debug@4.4.3)
+      '@sns-parse/platform-wechat_channel': 0.3.0-alpha.1(debug@4.4.3)
+      '@sns-parse/platform-weibo': 0.3.0-alpha.1(debug@4.4.3)
+      '@sns-parse/platform-weishi': 0.3.0-alpha.1(debug@4.4.3)
+      '@sns-parse/platform-xiaohongshu': 0.3.0-alpha.1(debug@4.4.3)
+      '@sns-parse/platform-xigua': 0.3.0-alpha.1(debug@4.4.3)
+      '@sns-parse/platform-youtube': 0.3.0-alpha.1(debug@4.4.3)
+      '@sns-parse/platform-zhihu': 0.3.0-alpha.1(debug@4.4.3)
+      '@sns-parse/platform-zuiyou': 0.3.0-alpha.1(debug@4.4.3)
     transitivePeerDependencies:
       - debug
       - supports-color
